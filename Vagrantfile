@@ -9,11 +9,11 @@ Vagrant::Config.run do | stack |
     dev.vm.boot_mode = :gui
 
     dev.vm.customize [ 'modifyvm', :id,
-      '--cpus', '2',
-      '--memory', '2048',
-      '--vram', '128',
-      '--clipboard', 'bidirectional'
-    ]
+                       '--cpus', '2',
+                       '--memory', '2048',
+                       '--vram', '128',
+                       '--clipboard', 'bidirectional'
+                     ]
 
     dev.vm.provision :puppet do | puppet |
       puppet.module_path    = "puppet/modules"
