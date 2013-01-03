@@ -12,7 +12,7 @@ node default {
   # }
 
   class { 'devtools':
-    ide => 'IntelliJ',
+    ide      => [ 'IntelliJ 12.0.1', 'Eclipse juno-SR1' ],
     packages => [ 'cvs', 'git', 'chromium-browser', 'firefox' ]
   }
 
