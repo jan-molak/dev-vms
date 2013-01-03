@@ -18,10 +18,13 @@ Please note that this software is licensed under MIT license and comes without w
 it useful :)
 
 To use the project you need:
-- [RVM](https://rvm.io/) or plain Ruby if you prefer
-- [Oracle's VirtualBox](https://www.virtualbox.org/)
+- [RVM](https://rvm.io/) (run "rvm requirements") or plain Ruby if you prefer
+- Add openssl support to RVM (run "rvm pkg install openssl" and reinstall rvm)
+- [Bundler](http://gembundler.com/) 
+- [Oracle VirtualBox](https://www.virtualbox.org/)
+- [Oracle VM VirtualBox Extension Pack](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack) (for USB 2.0 support)
 
-Then run the following:
+Then run the following in the top directory of this project:
 ```
 bundle install
 vagrant up
