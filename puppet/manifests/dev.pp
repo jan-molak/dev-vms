@@ -6,6 +6,8 @@ node default {
     with_ant   => true
   }
 
+  class { 'tomcat': version => 6 }
+
   # class { 'webserver':
   #   with_apache => true,
   #   with_tomcat => true
