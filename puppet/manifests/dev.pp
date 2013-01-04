@@ -8,6 +8,15 @@ node default {
 
   class { 'tomcat': version => 6 }
 
+  class { 'apache':
+    with_mods => [
+      'proxy',
+      'proxy_http',
+      'rewrite',
+      'headers'
+    ]
+  }
+
   class { 'devtools':
     ide      => [ 'IntelliJ 12.0.1', 'Eclipse juno-SR1' ],
     packages => [ 'cvs', 'git', 'chromium-browser', 'firefox' ]
