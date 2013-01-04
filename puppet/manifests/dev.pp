@@ -8,17 +8,12 @@ node default {
 
   class { 'tomcat': version => 6 }
 
-  # class { 'webserver':
-  #   with_apache => true,
-  #   with_tomcat => true
-  # }
-
   class { 'devtools':
     ide      => [ 'IntelliJ 12.0.1', 'Eclipse juno-SR1' ],
     packages => [ 'cvs', 'git', 'chromium-browser', 'firefox' ]
   }
 
-  # copies over custom files from puppet/files
-  #   to respective directories on the VM
-  # class { 'custom': }
+  # copies over custom configuration files from
+  #  files/custom_configuration to respective directories on the VM
+  # class { 'file_transporter': }
 }
