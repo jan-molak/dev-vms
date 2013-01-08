@@ -24,11 +24,31 @@ To use the project you need:
 - [Oracle VirtualBox](https://www.virtualbox.org/)
 - [Oracle VM VirtualBox Extension Pack](http://www.oracle.com/technetwork/server-storage/virtualbox/downloads/index.html#extpack) (for USB 2.0 support)
 
-Then run the following in the top directory of the project:
+Before you start, run the following commands in the top directory of the cloned project:
 ```
+# to initialize the external puppet modules and update them:
+git submodule init
+git submodule update
+
+# to install bundler, if you don't have it already:
 bundle install
-vagrant up
 ```
 
+On a daily basis you'll only need the following:
+
+```
+# to start the dev vm:
+vagrant up
+
+# to stop it
+vagrant halt
+
+# to rebuild it
+vagrant destroy --force && vagrant up
+```
+
+If you want to learn more about vagrant please refer to its [documentation](http://docs.vagrantup.com/v1/docs/getting-started/index.html) :)
+
 Good luck,
+
 Jan
