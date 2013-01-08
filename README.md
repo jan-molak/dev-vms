@@ -1,5 +1,5 @@
-vms
-===
+dev-vms
+=======
 
 One of the problems I often face is how to quickly provision a development environment for new developers joining the team
 and also how to make their dev environments consistent all the time. Another one is how to keep project-specific libraries

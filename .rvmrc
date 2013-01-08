@@ -1,1 +1,1 @@
-rvm --create use 1.9.3@vms
+rvm --create use 1.9.3@dev-vms
