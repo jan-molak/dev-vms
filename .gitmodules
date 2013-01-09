@@ -7,3 +7,6 @@
 [submodule "puppet/modules/devtools"]
 	path = puppet/modules/devtools
 	url = git@github.com:jan-molak/puppet-devtools.git
+[submodule "puppet/modules/java"]
+	path = puppet/modules/java
+	url = git@github.com:jan-molak/puppet-java.git
