@@ -16,3 +16,6 @@
 [submodule "puppet/modules/apache"]
 	path = puppet/modules/apache
 	url = git@github.com:jan-molak/puppet-apache.git
+[submodule "puppet/modules/file_transporter"]
+	path = puppet/modules/file_transporter
+	url = git@github.com:jan-molak/puppet-file_transporter.git
