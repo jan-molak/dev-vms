@@ -13,3 +13,6 @@
 [submodule "puppet/modules/tomcat"]
 	path = puppet/modules/tomcat
 	url = git@github.com:jan-molak/puppet-tomcat
+[submodule "puppet/modules/apache"]
+	path = puppet/modules/apache
+	url = git@github.com:jan-molak/puppet-apache.git
